@@ -6,11 +6,11 @@
 class Solution {
 public:
     double Power(double base, int exponent) {
-    	if(exponent==0)
+    	if(exponent==0)  //考虑0次方
             return 1;
         double ret=1.0;
         bool flag = false;
-        if(exponent<0){
+        if(exponent<0){  //为负数时
             exponent = 0-exponent;
             flag=true;
         }
